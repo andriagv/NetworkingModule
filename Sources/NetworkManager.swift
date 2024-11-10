@@ -4,11 +4,6 @@
 
 import Foundation
 
-public protocol NetworkProtocol {
-    func fetchNews(completion: @escaping @Sendable ([NewsArticle]) -> Void)
-}
-
-
 public class NetworkManager: NetworkProtocol {
     public init() {}
     
